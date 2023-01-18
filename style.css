@@ -54,6 +54,13 @@
   text-shadow:1px 1px black;
 }
 
+footer img {
+ position: absolute;
+ padding:10px;
+ align-items: right;
+ display:flex;
+}
+
 .cb-text h2 {
   font-weight:bolder;
 }
