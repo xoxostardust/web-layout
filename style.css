@@ -112,6 +112,11 @@ footer img {
   font-weight: bold;
 }
 
+.cb-text button {
+  margin-left:6.5em;
+  text-align: center;
+}
+
 .cb-text {
     width:100%;
 }
@@ -124,13 +129,15 @@ footer img {
     display:flex;
     flex-direction: row;
     width:60%;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 5vh;
 }
 
 .content-box-2 {
-    width:40%;
+    width:100%; 
+    height:42em;
     background-color: #f2f2f2;
-    align-items: space-between;
 }
 
 .exp-3 {
@@ -165,13 +172,17 @@ footer img {
 
 .button-1 {
   font-size: 18px;
+  text-align: center;
+  display:flex;
+  align-items: center;
   color:white;
-  padding:5px;
+  padding:10px;
   margin:25px;
   border-radius: 5%;
   border-color: transparent;
-  width:7vw;
 }
+
+
 
 .white {
   background-color:white;
@@ -231,27 +242,51 @@ footer img {
   padding:25px;
 }
 
+.contact-content {
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+
+.name, 
+.email,
+.subject {
+  background-color: rgba(241, 236, 236, 0.5);
+  text-align: left;
+  margin-bottom:25px;
+  width:100%;
+}
+
 .contact {
   height:55vh;
   background-image: url(layout-01-assets/img14.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width:100%;
+ 
   font-size: 23px;
 }
 
 .left-content {
-  width:50%;
+  width:25%;
+  align-items:left;
   display:flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .right-content {
-  width:50%;
+  width:25%;
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
+  text-align: left;
+  background-color: rgba(241, 236, 236, 0.5);
+  height:12vh;
+  align-items: right;
+  justify-content: space-between;
 }
 
 .content-box-3 h3 {
@@ -275,7 +310,8 @@ footer img {
 }
 
 .contact-content h2 {
-  text-shadow: 2px 2px white;
+  text-shadow: 2px 2px black;
+  color:white;
 }
 
 .contact-content {
