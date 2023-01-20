@@ -7,7 +7,9 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,7 +49,7 @@
         <div class="cb-text">
         <h2>Headline</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate quibusdam cupiditate molestiae quas nobis inventore ea nostrum quam repellat. Praesentium, aperiam maxime ratione architecto sequi consequatur molestiae eveniet et?</p>
-            <button class="button-1" id="green-b">Button Green</button>
+            <a class="button-1" id="green-b">Button Green</a>
         </div>
     </div>
     <div class="content-box-1" id="blue-box">
@@ -57,7 +59,7 @@
         <div class="cb-text">
         <h2>Headline</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, consequuntur nisi repellendus sunt qui ad quia quis beatae ab temporibus possimus saepe dolor praesentium maxime, dicta distinctio reiciendis magnam totam!</p>
-        <button class="button-1" id="blue-b">See Details</button>
+        <a class="button-1" id="blue-b">See Details</a>
         </div>
     </div>
     <div class="content-box-1" id="red-box">
@@ -67,7 +69,7 @@
         <div class="cb-text">
         <h2>Headline</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde voluptas earum reprehenderit hic accusamus nemo labore recusandae eveniet delectus? Fugit magni earum exercitationem incidunt natus deleniti ea similique autem!</p>
-            <button class="button-1" id="red-b">Button Red</button>
+            <a class="button-1" id="red-b">Button Red</a>
         </div>
     </div>
 </div>
@@ -89,7 +91,7 @@
         <div class="cb-text">
         <h2>Two Column Right Side</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, consequuntur nisi repellendus sunt qui ad quia quis beatae ab temporibus possimus saepe dolor praesentium maxime, dicta distinctio reiciendis magnam totam!</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, optio ipsa? Est sed facilis quae vitae recusandae eius deserunt deleniti ipsam vel, obcaecati iusto, saepe autem molestias aliquam dicta natus?</p>
-        <button class="white">Read more</button>
+        <a class="white" id="top-button">Read more</a>
         </div>
     </div>
 </div>
@@ -113,7 +115,7 @@
                 <h3>Column Two</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem dolorum consectetur eligendi! Possimus totam iure et maiores, magni aliquid hic, voluptatibus consequuntur modi veniam mollitia nisi dicta molestias voluptate!</p>
             </div>
-            <button class="white">Read It</button>
+            <a class="white">Read It</a>
         </div>
         <div class="content-box-3">
             <div class="cb-img"><img src="layout-01-assets/img8.jpg"></div>
@@ -128,7 +130,7 @@
                 <h3>Column Four</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem dolorum consectetur eligendi! Possimus totam iure et maiores, magni aliquid hic, voluptatibus consequuntur modi veniam mollitia nisi dicta molestias voluptate!</p>
             </div>
-            <button class="white">Details</button>
+            <a class="white">Details</a>
         </div>
     </div>
     <div class="exp-4">
@@ -138,30 +140,36 @@
             <h2>One Big Column</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt quos pariatur doloribus, perspiciatis officia cum ipsum maxime soluta fuga repellendus quibusdam nemo laudantium saepe atque ut sed aperiam ratione! <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima adipisci mollitia ullam? Optio, voluptatem consequuntur, temporibus eum voluptas hic voluptatibus officiis eligendi cumque veniam expedita, suscipit earum sequi quidem assumenda!</p>
             </div>
-            <button class="white">Read More</button>
+            <a class="white">Read More</a>
         </div>
     </div>
     </div>
     <section class="contact">
-        <div class="contact-content">
-            <h2>Contact Form</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur saepe maiores porro iste dolor. Reprehenderit debitis quidem ut dolores excepturi accusamus placeat vitae cum. Quos libero maxime animi officia rerum.</p>
+        <form class="contact-content">
+            <div class="formIntro">
+                 <h2>Contact Form</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur saepe maiores porro iste dolor. Reprehenderit debitis quidem ut dolores excepturi accusamus placeat vitae cum. Quos libero maxime animi officia rerum.</p>
+            </div>
+           
             <div class="left-content">
-                <form class="name">Name:</form>
-                <form class="email">Email:</form>
-                <form class="subject">Subject:</form>
+                <input class="name" name="name" placeholder="Name" type="text">
+                <input class="email" name="email" placeholder="Email" type="text">
+                <input class="subject" name="subject" placeholder="Subject" type="text">
             </div>
+            
             <div class="right-content">
-                <form>Your message here...</form>
+                <textarea name="message" id="" cols="30" rows="10">enter your message</textarea>
+                <input type="submit">
             </div>
-        </div>
+        </form>
     </section>
     <footer>
         <h2>Footer</h2>
         <p>Footer Info</p>
         <hr>
         <p>Copyright © 2084 Your Company Name</p>
-        <img src="layout-01-assets/img0.png">
+        
     </footer>
+    <img class="footer-img" src="layout-01-assets/img0.png">
 </body>
 </html>
